@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,6 @@
     <link href="./css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel='stylesheet'" href="./css/main.css">
-    
 </head>
 <body>
     <header>
@@ -659,5 +657,4 @@
     <script src="./js/main.js"></script>
     
 </body>
->>>>>>> 40ad9628e16b9824698e5568bfd479661d5864d6
 </html>
