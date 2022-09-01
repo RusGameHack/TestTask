@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function(){
         catalog();
     }
     mask();
-    document.querySelector('#form').addEventListener('submit', ()=>{
+    $('#form').on('submit', ()=>{
         $.ajax({
             type: "POST",
             url: './php/main.php',

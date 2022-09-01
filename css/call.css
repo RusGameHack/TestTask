@@ -59,6 +59,7 @@
 }
 .call__form input{
     padding: 19px 39px;
+    color: #5B6276;
 }
 .call__form input:focus-visible{
     outline: none;

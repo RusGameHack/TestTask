@@ -61,9 +61,9 @@
         <div class="container">
             <div class="catalog__card_line line"></div>
             <h2 class="catalog__title">Каталог</h2>
-                <div class="swiper__mobile">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
+            <div class="swiper__new">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
                         <?php
                                 $obj = array('Активные компоненты','Пассивные компоненты','Светодиоды<br> и светодиодные  индикаторы','Установочные изделия','Резонаторы и генераторы','Акустические компоненты','Реле','Кабели и аксесуары');
                                 for($j=0;$j<4;$j++){
@@ -99,48 +99,13 @@
                                     );
                                 }
                             ?>
-                        </div>
                     </div>
-                    <div class="catalog__navigation">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>    
                 </div>
-                <div class="swiper__desctop">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <?php
-                                $obj = array('Активные компоненты','Пассивные компоненты','Светодиоды<br> и светодиодные  индикаторы','Установочные изделия','Резонаторы и генераторы','Акустические компоненты','Реле','Кабели и аксесуары');
-                                for($j=1;$j<4;$j++){
-                                    echo ('
-                                        <div class="swiper-slide">
-                                        <div class="catalog__cards row justify-content-between">'
-                                    );
-                                    for($i=0;$i<8;$i++){
-                                        echo('
-                                            <a href="#" class="catalog__card col-xl-4 col-md-4 col-12 p-2 ">
-                                                <div class="catalog__card_img"><img class="lazy" src="./img/catalog/'.($i+1).'.png" alt="Активные компоненты"></div>
-                                                <div class="catalog__card_text">'.$obj[$i].'</div>
-                                                <div class="catalog__line"></div>
-                                            </a>'
-                                        );
-                                    }
-                                    echo('
-                                        </div>
-                                        </div>'
-                                    );
-                                }
-                            ?>  
-                        </div>
-                        
-                    </div>
-                    <div class="catalog__navigation">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>    
-                </div>
+                <div class="catalog__navigation">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>    
             </div>
-            
         </div>
     </section>
     <section class="map" id="map">
@@ -312,9 +277,10 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             direction: "horizontal",
-            slidesPerView: 1,
+            slidesPerView: 2,
+            slidesPerColumnFill:"row",
             spaceBetween: 30,
-            loop: true,
+            loop: false,
             autoplay: false,
             pagination: false,
             navigation: {
